@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>这是一个邮件模板</title>
+</head>
+<body>
+<SPAN lang=EN-US style='FONT-WEIGHT: normal; FONT-SIZE: 12pt; FONT-STYLE: italic; FONT-FAMILY: Arial;'>
+    <b>尊敬的用户:  <span th:text="${name}" />，您好</b>：
+    <br><br>
+    您的手机号为：<a th:href="${url}"  th:text="${phone}"></a>
+</SPAN>
+<SPAN lang=EN-US style='FONT-WEIGHT: normal; FONT-SIZE: 12pt; FONT-STYLE: italic; FONT-FAMILY: Times New Roman;'>
+    <br><br><br>系统邮件，请勿回复
+</SPAN>
+</body>
+</html>
